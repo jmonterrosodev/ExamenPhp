@@ -16,7 +16,7 @@ use App\Http\Controllers\IngredientController;
 */
 
 Route::get('/', function () {
-    return view('main/app');
+    return view('main/inicio');
 }); 
 
 Route::get('pastel/agregar', [CakeController::class, 'create'])->name('cake.create');

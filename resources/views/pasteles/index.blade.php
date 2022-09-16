@@ -31,43 +31,6 @@
                     <td> {{ $cake->creadorPastel}} </td>
                     <td> {{ $cake->fechaVence->format('d M Y')}} </td>
                     <td>
-                        <!-- <ol class="list-group list-group-numbered">
-                            <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-start">
-                                <div class="ms-2 me-auto">
-                                    Content for list item
-                                </div>
-                                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-                                    <div class="btn-group me-2" role="group" aria-label="First group">
-                                        <button type="button" class="btn btn-sm btn-warning"><i class="bi bi-pen"></i></button>
-                                        <button type="button" class="btn btn-sm btn-danger"><i class="bi bi-x-lg"></i></button>                                  
-                                    </div>
-                                </div>                    
-                            </li>
-                            <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-start">
-                                <div class="ms-2 me-auto">
-                                    Content for list item
-                                </div>
-                                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-                                    <div class="btn-group me-2" role="group" aria-label="First group">
-                                        <button type="button" class="btn btn-sm btn-warning"><i class="bi bi-pen"></i></button>
-                                        <button type="button" class="btn btn-sm btn-danger"><i class="bi bi-x-lg"></i></button>                                  
-                                    </div>
-                                </div>                      
-                            </li>
-                            <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-start">
-                                <div class="ms-2 me-auto">
-                                    Content for list item
-                                </div>
-                                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-                                    <div class="btn-group me-2" role="group" aria-label="First group">
-                                        <button type="button" class="btn btn-sm btn-warning"><i class="bi bi-pen"></i></button>
-                                        <button type="button" class="btn btn-sm btn-danger"><i class="bi bi-x-lg"></i></button>                                  
-                                    </div>
-                                </div>                     
-                            </li>
-                        </ol> -->
-                    </td>
-                    <td>
                         <a href="{{ route('cake.edit', $cake) }}" class="btn btn-outline-warning"><i class="bi bi-pencil-square"></i></a>
                         <form action="{{ route('cake.destroy', $cake) }}" method="post">
                             @csrf

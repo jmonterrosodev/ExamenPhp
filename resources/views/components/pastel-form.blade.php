@@ -11,20 +11,7 @@
 <label for="inputDesc" class="form-label">Descripcion Pastel</label>
 <textarea name="descPastel" type="textArea" class="form-control" id="inputDesc" >{{ old('descPastel', $cake->descPastel) }}</textarea>
 </div>
-<div class="col-md-8">
-<label for="ingredientes" class="form-label">Ingredientes</label>
-<select id="ingredientes"  class="form-select" multiple aria-label="multiple select example">
-    <option value="1">One</option>
-    <option value="2">Two</option>
-    <option value="3">Three</option>
-    <option value="4">Four</option>
-    <option value="5">Five</option>
-    <option value="6">Six</option>
-    <option value="7">Seven</option>
-    <option value="8">Eight</option>
-</select>
-</div>
-<div class="col-md-4">
+<div class="col-md-6">
     <label for="inputVence" class="form-label">Fecha Vencimiento</label>
     <input class="form-control" type="date" value="{{ old('fechaVence', $cake->fechaVence->format('Y-m-d') ) }}"  id="inputVence" name="fechaVence" value="" min="{{ date('Y-m-d') }}" max="2050-12-31">
     <input type="hidden" value="{{ is_null($cake->fechaCreado) ? date('Y-m-d') : $cake->fechaCreado->format('Y-m-d') }}"  id="inputCreado" name="fechaCreado" />    
